@@ -1,10 +1,2 @@
-target/classes/bit/XORTest.class
-target/classes/common/Tools.class
-target/classes/META-INF/algorithm_great.kotlin_module
-target/classes/random/RandomTest.class
-target/classes/search/BinarySearch.class
-target/classes/search/LocalMinSearch.class
-target/classes/sort/BubbleSort.class
-target/classes/sort/InsertionSort.class
-target/classes/sort/SelectionSort.class
+target/*
 *.iml

@@ -48,13 +48,13 @@ public class Tools {
 
 
     public static void printBinary(int num) {
-        System.out.print(num + " \t :");
-        for (int i = 31; i > 0; i--) {
+        for (int i = 31; i >= 0; i--) {
             System.out.print(((1 << i) & num) == 0 ? "0" : "1");
             if(i%8==0){
                 System.out.print(" ");
             }
         }
+        System.out.print( " \t : "+ num);
         System.out.println();
     }
 

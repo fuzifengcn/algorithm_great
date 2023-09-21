@@ -1,7 +1,7 @@
 package rookie.class01;
 
 /**
- * ½×³ËÇóºÍ
+ * é˜¶ä¹˜
  */
 public class Code02_SumOfFactorial
 {
@@ -22,7 +22,7 @@ public class Code02_SumOfFactorial
         }
         return ans;
     }
-    // µÝ¹é
+    // ï¿½Ý¹ï¿½
     public static long _factorial(int N) {
         if(N == 1){
             return 1;

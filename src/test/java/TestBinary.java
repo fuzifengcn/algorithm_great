@@ -1,4 +1,3 @@
-import common.Tools;
 
 public class TestBinary {
 

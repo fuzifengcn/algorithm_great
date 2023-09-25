@@ -1,4 +1,8 @@
 package rookie.class01;
+
+
+import common.Tools;
+
 /*
     插入排序
  */
@@ -42,11 +46,26 @@ public class Code05_InsertSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {2, 5, 7, 2, 8, 5, 4, 9, 6, 4, 2, 1, 2, 5};
-
-        print(arr);
-        insertSort(arr);
-        print(arr);
+        int testTimes = 10;
+        for (int i = 0; i < testTimes; i++) {
+            int[] arr = Tools.generateArray(10, 20);
+            int[] copy = Tools.copyArr(arr);
+            int[] temp = Tools.copyArr(arr);
+            insertSort(arr);
+            Code03_SelectSort.selectSort(copy);
+            if(!Tools.equalValues(arr,copy)){
+                System.out.println("校验不通过");
+            }
+            print(arr);
+            print(copy);
+            print(temp);
+            System.out.println("==============");
+        }
+//        int[] arr = {2, 5, 7, 2, 8, 5, 4, 9, 6, 4, 2, 1, 2, 5};
+//
+//        print(arr);
+//        insertSort(arr);
+//        print(arr);
 
     }
 }
